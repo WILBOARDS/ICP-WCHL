@@ -1,0 +1,19 @@
+
+{
+    "motoko.dfxPath": "dfx",
+    "motoko.vessel.enabled": true,
+    "editor.formatOnSave": true,
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[motoko]": {
+        "editor.defaultFormatter": "dfinity.vscode-motoko"
+    },
+    "files.associations": {
+        "*.mo": "motoko"
+    }
+}
