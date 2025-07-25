@@ -1,0 +1,36 @@
+{
+  "canisters": {
+    "marketplace": {
+      "main": "backend/marketplace/main.mo",
+      "type": "motoko",
+      "dependencies": ["nft"]
+    },
+    "nft": {
+      "main": "backend/nft/main.mo",
+      "type": "motoko",
+      "dependencies": ["assets"]
+    },
+    "user": {
+      "main": "backend/user/main.mo",
+      "type": "motoko",
+      "dependencies": ["storage"]
+    },
+    "assets": {
+      "type": "assets",
+      "source": ["assets"]
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "networks": {
+    "local": {
+      "bind": "127.0.0.1:8000",
+      "type": "ephemeral"
+    }
+  },
+  "version": 1
+}
